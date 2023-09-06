@@ -1,5 +1,3 @@
-//This file deals with the db functionalities:
-//Double dot is used to indicate that js file for dbConnection is one directory up as cats.js file comes under folder'models'
 const { ObjectId } = require('mongodb');
 let db = require('../dbConnection');
 

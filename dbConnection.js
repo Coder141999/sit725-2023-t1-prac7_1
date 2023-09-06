@@ -16,11 +16,11 @@ const client = new MongoClient(uri, {
       await client.connect();
       collection= client.db().collection('Cat');
       console.log('connected to collection');
-      resolve(); //when successful
+      resolve(); 
     } 
     catch(ex) {
       console.error(ex);
-      reject(ex); //when error
+      reject(ex); 
     }
    });
   }
@@ -28,6 +28,4 @@ const client = new MongoClient(uri, {
 function getCollection() {
     return collection;
 }
-
-//for exporting the client so that it can be used in some other part of this application
 module.exports = {connect, getCollection};
